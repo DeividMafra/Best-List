@@ -11,6 +11,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { UsersComponent } from './components/users/users.component';
 import { LocationComponent } from './components/location/location.component';
 import { MarketComponent } from './components/market/market.component';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { MarketComponent } from './components/market/market.component';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
